@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill_the_form</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css" integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="brand">Tech <span>World</span> Electronic</h1>
+        <div class="wrapper">
+            <div class="company-info">
+               <h3>Tech World Electronic</h3> 
+              <!-- <ul>
+                  <li><i class="fa fa-phone"></i> (+91) 1234567895 </li>
+                  <li><i class="fa fa-envelope"></i> techworld@tech.com</li>
+              </ul> --> 
+            </div>
+            <div class="contact">
+              <h3>Entry_Form_Information</h3>
+              <div class="alert">Response is recorded</div>
+              <form id="EntryForm">
+                  <p>
+                      <label>Name</label>
+                      <input type="text" name="Name" id="name" required>
+                  </p>
+                  <p>
+                    <label>Phone Number</label>
+                    <input type="text" name="Phone Number" maxlength="10"  pattern="[0-9]{10}"  id="phone number"  required>
+                  </p>
+                  <p>
+                    <label>Gender</label>
+                    <input type="text" name="Gender" id="gender" required> 
+                  </p>
+                  <p>
+                    <label>Age</label>
+                    <input type="text" name="Age" maxlength="2" pattern="[0-9]{2}" id="age" required>
+                  </p>
+                  <p>
+                    <label>BPM_and_SPO2_Level</label>
+                    <input type="text" name="BPM_and_SPO2_Level" id="bpm_and_spo2_level" placeholder="Enter your BPM and SPO2 level"  required>
+                  </p>
+                  <p class="full">
+                    <label>Address</label>
+                    <input type="text" name="Address" id="address" required>
+                  </p>
+                  <p class="full">
+                      <button type="submit">Submit</button>
+                  </p>
+              </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="main.js"> </script>
+</body>
+</html>
